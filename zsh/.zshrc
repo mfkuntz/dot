@@ -64,6 +64,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+export TERM=xterm-256color
+set t_Co=256
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
