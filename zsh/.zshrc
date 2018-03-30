@@ -59,7 +59,7 @@ ZSH_CUSTOM=~/.config/zsh/custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git debian ubuntu
+  git debian ubuntu kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -98,6 +98,9 @@ set t_Co=256
 #
 
 alias clip="xclip -selection c"
+
+
+export PATH="$PATH:$HOME/.local/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
