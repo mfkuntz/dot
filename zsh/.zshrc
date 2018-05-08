@@ -97,6 +97,9 @@ set t_Co=256
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
+# Each session should have its own history
+unsetopt share_history
+
 alias clip="xclip -selection c"
 
 
@@ -104,4 +107,8 @@ export PATH="$PATH:$HOME/.local/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
